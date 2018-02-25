@@ -1,15 +1,216 @@
 </!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Английский для детей</title>
+	
 <link href="./css/index.css" rel="stylesheet"></head>
 <body>
 
-<h1>Regular</h1>
-<img src="img/webpack.svg" alt="webpack">
-<div class="alert alert-primary" role="alert">
-  This is a primary alert—check it out!
-</div>
-<i class="fa fa-address-book" aria-hidden="true"></i>
+<header class="header">
+	<div class="top-line d-flex align-items-center justify-content-between">
+		<div class="logo">SITE LOGO</div>
+		<div class="logo-min">SL</div>
+		<div class="search">
+			<input type="text" class="search__input">
+			<i class="fa fa-map-marker search__map" aria-hidden="true"></i>
+			<i class="fa fa-caret-down search__down" aria-hidden="true"></i>
+			<a href="#" class="search__loupe"><i class="fa fa-search" aria-hidden="true"></i></a>
+		</div>
+		<div class="account">
+			<div class="bell">
+				<i class="fa fa-bell" aria-hidden="true"></i>
+				<div class="bell__notice"><span>4</span></div>
+			</div>
+			<div class="profile">
+				<img src="img/profile.png" alt="profile">
+			</div>
+		</div>
+	</div>		
+	<div class="image">
+		<div class="image__overlay"></div>			
+	</div>
+</header>
+
+<section class="content">
+	<div class="content__overlay"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 order-last col-md-9 order-md-first">
+				
+				<div class="english">
+					<h1 class="h1 english__title"><i class="fa fa-envira" aria-hidden="true"></i>Английский для детей</h1>
+					<p class="slogan english__slogan">Лучше раньше, чем никогда</p>	
+				</div>
+				
+				<div id="accordion" class="accordion">
+
+			  		<div class="card">
+			    		<div class="card-header" id="headingOne">
+			      			<h5 class="mb-0">
+			        			<button class="btn btn-link accordion__link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			        				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+			        				В каком возрасте начать обучение?
+			        				<i class="fa fa-angle-down" aria-hidden="true"></i>
+			        			</button>
+			      			</h5>
+			    		</div>
+			    		<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			      			<div class="card-body">До пяти лет дети обладают лингвистической гениальностью. Они способны запоминать 20-30 новых слов в день. Простая арифметика дает впечатляющий результат - 7-10 тысяч слов в год. Да мы и в родном русском столько не используем, а что говорить об иностранном. Способности к языкам, безусловно, либо есть, либо нет.</div>
+			    		</div>
+			  		</div>
+
+			  		<div class="card">
+			    		<div class="card-header" id="headingTwo">
+			      			<h5 class="mb-0">
+			        			<button class="btn btn-link collapsed accordion__link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			        				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+			        				В каком возрасте начать обучение?
+			        				<i class="fa fa-angle-down" aria-hidden="true"></i>
+			        			</button>
+			      			</h5>
+			    		</div>
+			    		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+			      			<div class="card-body">До пяти лет дети обладают лингвистической гениальностью. Они способны запоминать 20-30 новых слов в день. Простая арифметика дает впечатляющий результат - 7-10 тысяч слов в год. Да мы и в родном русском столько не используем, а что говорить об иностранном. Способности к языкам, безусловно, либо есть, либо нет.</div>
+			    		</div>
+					</div>
+			  	
+			  	</div>
+
+			</div>
+
+			<div class="col-12 order-first col-md-3 order-md-last">
+				<div class="course">
+					<h1 class="h1 course__title">Курсы</h1>
+					<p class="slogan">Английский язык</p>
+					
+					<div class="card">
+						<div class="card__logo">
+							<img src="img/logo-min.png" alt="">
+						</div>
+						<i class="fa fa-star-o card__star" aria-hidden="true"></i>
+					  	<img class="card-img card-img_shadow" src="img/class.jpg" alt="Card image cap">
+					  	<div class="card-block">
+					  		<div class="card__name">
+					  			<i class="fa fa-check-square card__check" aria-hidden="true"></i>
+					    		<h4 class="card-title">Школа  «Let's Speak»</h4>
+							</div>
+					    	<p class="card-text">Репетиторы носители языка главное наше преимущес...  </p>
+					  	</div>
+					  	<span class="card__line"></span>
+					  	<div class="card__location">
+					  		<i class="fa fa-map-marker card__map" aria-hidden="true"></i>
+					  		<div class="card__country">Украина</div>
+					  		<div class="card__city">Киев</div>
+					  	</div>
+					</div>
+				
+				</div>	
+			</div>
+		
+		</div>
+	</div>
+</section>
+
+<section class="carousel">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="carousel__title">Курсы английского в Киеве</h2>
+			</div>
+		</div>
+	</div>
+	<div class="owl-carousel owl-theme">
+		<div class="card carousel__card">
+			<div class="card__logo">
+				<img src="img/logo-min.png" alt="">
+			</div>
+			<i class="fa fa-star-o card__star" aria-hidden="true"></i>
+			<img class="card-img" src="img/class.jpg" alt="Card image cap">
+			<div class="card-block">
+				<div class="card__name">
+					<i class="fa fa-check-square card__check" aria-hidden="true"></i>
+				   <h4 class="card-title">Школа  «Let's Speak»</h4>
+				</div>
+				<p class="card-text">Репетиторы носители языка главное наше преимущес...  </p>
+			</div>
+			<span class="card__line"></span>
+			<div class="card__location">
+			  	<i class="fa fa-map-marker card__map" aria-hidden="true"></i>
+			  	<div class="card__country">Украина</div>
+			  	<div class="card__city">Киев</div>
+			  	<div class="card__country-city">Украина, Киев</div>
+			</div>
+		</div>
+		<div class="card carousel__card">
+			<div class="card__logo">
+				<img src="img/logo-min.png" alt="">
+			</div>
+			<i class="fa fa-star-o card__star" aria-hidden="true"></i>
+			<img class="card-img" src="img/class.jpg" alt="Card image cap">
+			<div class="card-block">
+				<div class="card__name">
+					<i class="fa fa-check-square card__check" aria-hidden="true"></i>
+				   <h4 class="card-title">Школа  «Let's Speak»</h4>
+				</div>
+				<p class="card-text">Репетиторы носители языка главное наше преимущес...  </p>
+			</div>
+			<span class="card__line"></span>
+			<div class="card__location">
+			  	<i class="fa fa-map-marker card__map" aria-hidden="true"></i>
+			  	<div class="card__country">Украина</div>
+			  	<div class="card__city">Киев</div>
+			  	<div class="card__country-city">Украина, Киев</div>
+			</div>
+		</div>
+		<div class="card carousel__card">
+			<div class="card__logo">
+				<img src="img/logo-min.png" alt="">
+			</div>
+			<i class="fa fa-star-o card__star" aria-hidden="true"></i>
+			<img class="card-img" src="img/class.jpg" alt="Card image cap">
+			<div class="card-block">
+				<div class="card__name">
+					<i class="fa fa-check-square card__check" aria-hidden="true"></i>
+				   <h4 class="card-title">Школа  «Let's Speak»</h4>
+				</div>
+				<p class="card-text">Репетиторы носители языка главное наше преимущес...  </p>
+			</div>
+			<span class="card__line"></span>
+			<div class="card__location">
+			  	<i class="fa fa-map-marker card__map" aria-hidden="true"></i>
+			  	<div class="card__country">Украина</div>
+			  	<div class="card__city">Киев</div>
+			  	<div class="card__country-city">Украина, Киев</div>
+			</div>
+		</div>
+		<div class="card carousel__card">
+			<div class="card__logo">
+				<img src="img/logo-min.png" alt="">
+			</div>
+			<i class="fa fa-star-o card__star" aria-hidden="true"></i>
+			<img class="card-img" src="img/class.jpg" alt="Card image cap">
+			<div class="card-block">
+				<div class="card__name">
+					<i class="fa fa-check-square card__check" aria-hidden="true"></i>
+				   <h4 class="card-title">Школа  «Let's Speak»</h4>
+				</div>
+				<p class="card-text">Репетиторы носители языка главное наше преимущес...  </p>
+			</div>
+			<span class="card__line"></span>
+			<div class="card__location">
+			  	<i class="fa fa-map-marker card__map" aria-hidden="true"></i>
+			  	<div class="card__country">Украина</div>
+			  	<div class="card__city">Киев</div>
+			  	<div class="card__country-city">Украина, Киев</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></body>
 </html>
