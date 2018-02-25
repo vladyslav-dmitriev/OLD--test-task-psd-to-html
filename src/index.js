@@ -11,9 +11,13 @@ import './sass/main.sass';
 
 $(document).ready(function(){
   	$('.owl-carousel').owlCarousel({
+  		loop: true,
+  		autoplay: true,
+        smartSpeed: 2000,
+        autoplayTimeout: 4000,
   		nav: true,
-  		margin: 18,
-  		responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+  		margin: 23,
+  		responsive: {
             0: {
 				items:1
 			},
