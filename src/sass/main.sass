@@ -13,7 +13,6 @@ body
 
 header
 	width: 100%
-	// height: 100%
 
 a:focus, a:hover
 	text-decoration: none
@@ -30,12 +29,24 @@ a:focus, a:hover
 	color: #fff
 	margin-left: 37px
 	font-weight: 300
+	white-space: nowrap
+
+.logo-min
+	font-size: 23px
+	text-transform: uppercase
+	color: #fff
+	margin-left: 10px
+	font-weight: 300
+	white-space: nowrap
+	display: none
 
 .search
 	height: 35px
-	width: 500px
+	width: 100%
+	min-width: 170px
 	position: relative
 	background: #fff
+	margin: 0 150px
 	&__input
 		width: calc(100% - 90px)
 		height: 100%
@@ -49,16 +60,15 @@ a:focus, a:hover
 		top: 7px
 		left: 12px
 		color: $map
-		font-size: 20px
+		font-size: 24px
 	&__down
 		position: absolute
-		top: 8px
+		top: 10px
 		left: 33px
-		font-size: 20px
+		font-size: 18px
 		color: $down
 	&__loupe
 		position: absolute
-		// top: 10px
 		top: 0
 		right: 4px
 		font-size: 14px
@@ -69,11 +79,46 @@ a:focus, a:hover
 		i
 			line-height: 35px
 
+.account
+	height: 56px
+	width: 150px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
 .bell
+	position: relative
 	color: $bell
+	font-size: 20px
+	width: 50px
+	height: 56px
+	padding-top: 19px
+	&__notice
+		position: absolute
+		top: 10px
+		left: 16px
+		width: 15px
+		height: 18px
+		background: #FF0000
+		border: 1px solid #FF0000
+		border-radius: 5px
+		color: #fff
+		span
+			position: absolute
+			top: -2px
+			left: 2px
+			font-size: 14px
 
 .profile
-	margin-right: 37px
+	width: 70px
+	height: 56px
+	padding-top: 5px
+	img
+		margin-top: 4px
+		width: 100%
+		height: auto
 
 .image
 	background: url('../img/header-bg.jpg') top center no-repeat
@@ -144,17 +189,22 @@ a:focus, a:hover
 		padding-top: 45px
 		padding-bottom: 45px
 		border: none
-		i
+		position: relative
+		.fa-graduation-cap
 			font-size: 26px
 			padding: 0 24px 0 13px
+			color: #303030
+		.fa-angle-down
+			position: absolute
+			top: 57px
+			right: 45px
+			color: #303030
 	.card-body
 		padding: 0 90px 95px 105px
 		border: none
 
-.school
-	&__card
-		position: relative
 .card
+	position: relative
 	&__star
 		color: $card-i
 		font-size: 26px
@@ -166,11 +216,20 @@ a:focus, a:hover
 		margin: 49px auto 20px
 		&_shadow
 			box-shadow: 0 15px 20px #ccc
+	&__name
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
 	&-title
 		color: #000
+		padding-left: 12px
+		padding-right: 12px 
 	&__check
-		padding: 0 23px 0 23px
 		color: $card-i
+		font-size: 26px
+		padding-left: 23px
 	&-text
 		padding: 0 23px 23px
 		color: $card-text
@@ -214,6 +273,11 @@ a:focus, a:hover
 			margin: 13px auto
 			display: block
 			z-index: 3
+	&__country-city
+		color: #737373
+		margin-left: 52px
+		font-size: 14px
+		display: none
 
 .carousel
 	position: relative
@@ -231,3 +295,8 @@ a:focus, a:hover
 
 .owl-item
 	padding-top: 30px
+
+.owl-dots
+	display: none
+
+@import 'media'

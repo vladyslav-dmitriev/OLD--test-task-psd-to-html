@@ -15,20 +15,20 @@ $(document).ready(function(){
   		autoplay: true,
         smartSpeed: 2000,
         autoplayTimeout: 4000,
-  		nav: true,
   		margin: 23,
   		responsive: {
             0: {
-				items:1
+				items: 2
 			},
-            600:{
-                items:2
+            600: {
+                items: 2
+            },
+            800: {
+            	items: 3
             },
             1000:{
-                items:4
+                items: 4
             }
         }
   	});
 });
-
-
